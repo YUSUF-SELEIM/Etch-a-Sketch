@@ -167,7 +167,7 @@ input:checked+.slider:before {
 }
 
 @media only screen and (max-width: 1000px) {
-    body {
+    .body {
         display: flex;
         flex-direction: column;
     }
