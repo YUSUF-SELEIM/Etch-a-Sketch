@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap"
+			rel="stylesheet" />
+		<link rel="icon" type="image/png" href="./pencil.png" />
+		<link rel="stylesheet" href="./style.css" />
+		<script src="./script.js" defer></script>
+		<title>Etch-a-Sketch</title>
+	</head>
+	<body>
+		<h1>✏️Etch A Sketch✏️</h1>
+		<div class="body">
+			<div class="left-panel">
+				<div id="color-picker">
+					<input id="picker-value" type="color" value="#000000" />
+				</div>
+				<div class="button">
+					<button id="color-button">Normal Mode</button>
+				</div>
+				<div class="button">
+					<button id="eraser-button">Eraser</button>
+				</div>
+				<div class="button">
+					<button id="random-button">Random Colors</button>
+				</div>
+				<div class="sliderInfo">
+					<div id="sliderValue"></div>
+					<input id="slider" type="range" value="16" min="1" max="64" />
+				</div>
+				<div>
+					<!-- Rounded switch -->
+					<label class="switch">
+						<input id="checkbox-value" type="checkbox" />
+						<span class="slider round"></span>
+					</label>
+				</div>
+			</div>
+
+			<div id="grid-container"></div>
+		</div>
+	</body>
+</html>

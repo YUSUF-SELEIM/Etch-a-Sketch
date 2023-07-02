@@ -1,0 +1,167 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #fffcf9;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    font-family: "Patrick Hand", cursive;
+    color: #213555;
+}
+
+h1 {
+    padding: 10px;
+    text-align: center;
+    font-size: 50px;
+}
+
+.body {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 150px;
+}
+
+.left-panel {
+    margin-left: 122px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.button button {
+    width: 100%;
+    height: 50px;
+    background-color: #d8c4b6;
+    color: black;
+    border: solid 2px #213555;
+}
+
+.button:active {
+    transform: scale(1.1) perspective(1px);
+}
+
+.button:hover {
+    box-shadow: 0px 0px 2px 2px rgb(0, 0, 0);
+}
+
+#color-picker input {
+    width: 100%;
+    height: 50px;
+    background-color: #d8c4b6;
+    border: solid 2px #213555;
+}
+
+.sliderInfo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 35px;
+    gap: 10px;
+}
+
+#grid-container {
+    display: grid;
+    width: 500px;
+    height: 500px;
+    /* border: 1px solid red; */
+    box-shadow: #000000 0px 3px 8px;
+    align-self: center;
+}
+
+.border-the-children>* {
+    border: grey 2px solid;
+}
+
+/* Slider Styling */
+#slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    background: #d8c4b6;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+}
+
+#slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #213555;
+    cursor: pointer;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Switch Styling */
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #d8c4b6;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #586678;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+input:checked+.slider {
+    background-color: #d8c4b6;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #d8c4b6;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
