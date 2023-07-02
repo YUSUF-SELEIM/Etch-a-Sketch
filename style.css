@@ -70,7 +70,7 @@ h1 {
     display: grid;
     width: 500px;
     height: 500px;
-    /* border: 1px solid red; */
+    border: 1px solid red;
     box-shadow: #000000 0px 3px 8px;
     align-self: center;
 }
@@ -170,5 +170,15 @@ input:checked+.slider:before {
     .body {
         display: flex;
         flex-direction: column;
+    }
+
+    #grid-container {
+        width: 400px;
+        height: 400px;
+        margin-bottom: 20px;
+    }
+
+    .left-panel {
+        margin: 0;
     }
 }
