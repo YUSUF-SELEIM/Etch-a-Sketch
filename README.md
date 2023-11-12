@@ -1,4 +1,4 @@
-# Etch-a-Sketch
+# Etch-a-Sketch Project
 ## Live Preview : https://yusuf-seleim.github.io/Etch-a-Sketch/
 ![Screenshot from 2023-07-03 14-30-53](https://github.com/YUSUF-SELEIM/Etch-a-Sketch/assets/97110015/8065cc6b-9de5-4b63-81bd-b836dd7ee6cd)
 #
